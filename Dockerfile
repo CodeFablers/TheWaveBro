@@ -18,5 +18,4 @@ RUN ls
 RUN /bin/bash -l -c "gem install bundler"
 RUN /bin/bash -l -c "bundle config --global silence_root_warning 1"
 RUN /bin/bash -l -c "bundle install"
-
-EXPOSE 4567
+RUN /bin/bash -l -c "puma -d -C './config/puma.rb'"
