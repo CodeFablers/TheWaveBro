@@ -18,5 +18,7 @@ RUN ls
 RUN /bin/bash -l -c "gem install bundler"
 RUN /bin/bash -l -c "bundle config --global silence_root_warning 1"
 RUN /bin/bash -l -c "bundle install"
+RUN /bin/bash -l -c "echo api-key: $(openssl rand -base64 32) > secret.yml"
+RUN /bin/bash -l -c "echo secret.yml"
 
 ENTRYPOINT /bin/bash -l -c "puma -C './config/puma.rb'"
