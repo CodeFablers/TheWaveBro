@@ -1,7 +1,7 @@
 source 'https://rubygems.org'.freeze
 
 # Sinatra as simple framework
-gem 'sinatra', '1.4.7'
+gem 'sinatra', '2.0.0'
 # Puma as the app server
 gem 'puma', '3.6.2'
 # Redis adapter
