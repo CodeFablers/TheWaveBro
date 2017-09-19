@@ -1,2 +1,2 @@
 language: ruby
-script: echo 'No script to build is needed'
+script: bundle exec rspec
