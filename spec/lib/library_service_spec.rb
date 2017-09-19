@@ -4,15 +4,15 @@ describe LibraryService do
   subject(:library_service) { LibraryService.new }
 
   let(:expected_list) do
-    dog_key = "ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmRvZy5wZXQ="
+    dog_key = 'ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmRvZy5wZXQ='
     dog_path = "#{SPEC_PATH}/mock_library/dog.pet"
-    alex_key = "ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmFsZXgubWVu"
+    alex_key = 'ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmFsZXgubWVu'
     alex_path = "#{SPEC_PATH}/mock_library/mens_club/alex.men"
-    johny_key = "ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmpvaG55Lm1lbg=="
+    johny_key = 'ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmpvaG55Lm1lbg=='
     johny_path = "#{SPEC_PATH}/mock_library/mens_club/johny.men"
-    jessica_key = "ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09Omplc3NpY2Eud29tYW4="
+    jessica_key = 'ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09Omplc3NpY2Eud29tYW4='
     jessica_path = "#{SPEC_PATH}/mock_library/womans_club/jessica.woman"
-    katie_key = "ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmthdGllLndvbWFu"
+    katie_key = 'ZmFJM2VsWXkveEFFOTBxbmxTNDg5UT09OmthdGllLndvbWFu'
     katie_path = "#{SPEC_PATH}/mock_library/womans_club/katie.woman"
 
     {

@@ -1,3 +1,4 @@
+# Interface class for library manipulating
 class LibraryService
   SYSTEM_FILES = [
     "#{LIBRARY_PATH}/secret.yml",
@@ -26,7 +27,6 @@ class LibraryService
       next if SYSTEM_FILES.include? file_path
       next if File.directory? file_path
 
-      relative_path =
       file_id = Base64.strict_encode64 "#{API_KEY}:#{File.basename(file_path)}"
       [file_id, file_path]
     end

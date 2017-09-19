@@ -1,3 +1,4 @@
+# There are simple list of application actions(routes)
 class WaveBro
   before do
     authenticated = KeyVerifier.new(api_key).valid?

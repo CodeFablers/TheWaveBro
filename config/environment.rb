@@ -7,7 +7,7 @@ ROOT_PATH = File.expand_path('../../', __FILE__).freeze
 if APP_ENV == :dev
   LIBRARY_PATH = '/home/wave_bro/library'.freeze
   secret_path = "#{LIBRARY_PATH}/secret.yml"
-  unless File.exists?(secret_path)
+  unless File.exist?(secret_path)
     puts('== Please add secret file in the root of your directory. Bye! ==')
     exit(0)
   end

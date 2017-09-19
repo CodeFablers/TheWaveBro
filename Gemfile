@@ -6,6 +6,8 @@ gem 'sinatra', '2.0.0'
 gem 'puma', '3.6.2'
 # Redis adapter
 gem 'redis', '3.3.3'
+# Rubocop for getting better code climate
+gem 'rubocop', '0.50'
 # Cover code by specs
 gem 'rspec', '3.6.0'
 # For debugging

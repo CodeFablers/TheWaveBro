@@ -1,3 +1,4 @@
+# Used for verifing API key in headers. To be upgrated..
 class KeyVerifier
   attr_reader :input
 
