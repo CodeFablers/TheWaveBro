@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/CodeFablers/TheWaveBro/badges/gpa.svg)](https://codeclimate.com/github/CodeFablers/TheWaveBro)
+
 # wave_bro
 Client for something special
 
