@@ -1,1 +1,2 @@
 language: ruby
+script: echo 'No script to build is needed'
