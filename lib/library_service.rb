@@ -1,16 +1,16 @@
-class Library
+class LibraryService
   SYSTEM_FILES = [
     "#{LIBRARY_PATH}/secret.yml",
     "#{LIBRARY_PATH}/list.json"
   ].freeze
 
-  def plain_list
+  def json_list
     library_list = File.open("#{LIBRARY_PATH}/list.json", 'r')
     library_list.read
   end
 
   def list
-    JSON.parse(plain_list)
+    JSON.parse(json_list)
   end
 
   def fetch!
@@ -24,8 +24,10 @@ class Library
   def library_hash
     pairs = Dir["#{LIBRARY_PATH}/**/*"].map do |file_path|
       next if SYSTEM_FILES.include? file_path
+      next if File.directory? file_path
 
-      file_id = Base64.strict_encode64 "#{API_KEY}:#{File.birthtime(file_path)}"
+      relative_path =
+      file_id = Base64.strict_encode64 "#{API_KEY}:#{File.basename(file_path)}"
       [file_id, file_path]
     end
     pairs.compact.to_h

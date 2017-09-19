@@ -12,7 +12,7 @@ class WaveBro
 
   get '/library' do
     content_type :json
-    library.plain_list
+    library.json_list
   end
 
   get '/library/download' do
@@ -23,7 +23,7 @@ class WaveBro
   private
 
   def library
-    @library ||= Library.new
+    @library ||= LibraryService.new
   end
 
   def api_key
