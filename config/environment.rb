@@ -17,6 +17,8 @@ end
 # ========= Gems =========
 require 'sinatra/base'
 require 'redis'
+require 'byebug'
+require 'awesome_print'
 # ========= /Gems ========
 
 # ========= Lib ==========

@@ -8,3 +8,6 @@ gem 'puma', '3.6.2'
 gem 'redis', '3.3.3'
 # Cover code by specs
 gem 'rspec', '3.6.0'
+# For debugging
+gem 'byebug'
+gem 'awesome_print'
